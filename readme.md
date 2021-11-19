@@ -1,6 +1,6 @@
 ## About
 
-This package has been forked from jamesckemp/gulp-freemius-deploy to make it compatible with Gulp v4
+This package has been forked from [jamesckemp/gulp-freemius-deploy] to make it compatible with Gulp v4
 
 ## Installation
 
