@@ -19,7 +19,7 @@ var gulp = require( 'gulp' );
 var gulpFreemiusDeploy = require( 'gulp-freemius-deploy' );
 
 exports.deploy = (done) => {
-	FSDeploy(gulp, {
+	gulpFreemiusDeploy(gulp, {
 		developer_id: 000,
 		plugin_id: 000,
 		public_key: 'pk_*****',
@@ -51,7 +51,7 @@ var gulpFreemiusDeploy = require( 'gulp-freemius-deploy' );
 var fs_config = require( './fs-config.json' );
 
 exports.deploy = (done) => {
-	FSDeploy(gulp, {
+	gulpFreemiusDeploy(gulp, {
 		developer_id: fs_config.developer_id,
 		plugin_id: fs_config.plugin_id,
 		public_key: fs_config.public_key,
