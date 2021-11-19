@@ -1,3 +1,7 @@
+## About
+
+This package has been forked from jamesckemp/gulp-freemius-deploy to make it compatible with Gulp v4
+
 ## Installation
 
 Install package with NPM and add it to your development dependencies:
@@ -12,8 +16,9 @@ In its most basic form, the configuration would look like this:
 
 ```js
 var gulp = require( 'gulp' );
+var gulpFreemiusDeploy = require( 'gulp-freemius-deploy' );
 
-require( 'gulp-freemius-deploy' )( gulp, {
+exports.deploy = gulpFreemiusDeploy( gulp, {
 	developer_id: 000,
 	plugin_id: 000,
 	public_key: 'pk_*****',
@@ -38,10 +43,11 @@ If your `gulpfile.js` is in a public repository, you may want to abstract the `d
 You can then include it in your gulpfile:
 
 ```js
-var gulp = require( 'gulp' ),
-    fs_config = require( './fs-config.json' );
+var gulp = require( 'gulp' );
+var gulpFreemiusDeploy = require( 'gulp-freemius-deploy' );
+var fs_config = require( './fs-config.json' );
 
-require( 'gulp-freemius-deploy' )( gulp, {
+exports.deploy = gulpFreemiusDeploy( gulp, {
 	developer_id: fs_config.developer_id,
 	plugin_id: fs_config.plugin_id,
 	public_key: fs_config.public_key,
