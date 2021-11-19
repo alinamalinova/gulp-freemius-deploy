@@ -48,14 +48,14 @@ You can then include it in your gulpfile:
 ```js
 var gulp = require( 'gulp' );
 var gulpFreemiusDeploy = require( 'gulp-freemius-deploy' );
-var fs_config = require( './fs-config.json' );
+var fsConfig = require( './fs-config.json' );
 
 exports.deploy = (done) => {
 	gulpFreemiusDeploy(gulp, {
-		developer_id: fs_config.developer_id,
-		plugin_id: fs_config.plugin_id,
-		public_key: fs_config.public_key,
-		secret_key: fs_config.secret_key,
+		developer_id: fsConfig.developer_id,
+		plugin_id: fsConfig.plugin_id,
+		public_key: fsConfig.public_key,
+		secret_key: fsConfig.secret_key,
 		zip_name: 'your-zip-to-deploy.zip',
 		zip_path: 'dist/',
 		add_contributor: true
