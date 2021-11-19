@@ -84,7 +84,7 @@ module.exports = function (gulp, args) {
       }
 
       message = 'Successfully deployed v' + body.version + ' to Freemius. Go and release it: https://dashboard.freemius.com/#!/live/plugins/' + args.plugin_id + '/deployment/'
-      notifier.notify({ message: message })
+      //notifier.notify({ message: message })
       console.log('\x1b[32m%s\x1b[0m', message)
       return
     }
